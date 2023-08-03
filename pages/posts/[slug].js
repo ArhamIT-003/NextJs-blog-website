@@ -1,11 +1,16 @@
+import { Fragment } from "react";
 import PostContent from "../../components/posts/post-details/post-content";
 import { GetAllFilesName, GetAllPostData } from "../../lib/post-util";
-
+import Head from "next/head";
 function SinglePost(props) {
   return (
-    <section>
+    <Fragment>
+      <Head>
+        <title>{props.post.title}</title>
+        <meta name="description" content={props.post.excerpt} />
+      </Head>
       <PostContent post={props.post} />
-    </section>
+    </Fragment>
   );
 }
 
