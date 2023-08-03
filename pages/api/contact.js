@@ -22,8 +22,7 @@ export default async function handler(req, res) {
       message,
     };
 
-    const uri =
-      "mongodb+srv://arham_1809:jethalal_123@arhamcluster.mxu4yup.mongodb.net/user-form?retryWrites=true&w=majority";
+    const uri = process.env.MONGODB_URI;
     const client = new MongoClient(uri);
     try {
       client.connect();
