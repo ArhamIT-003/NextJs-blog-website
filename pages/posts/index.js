@@ -1,5 +1,5 @@
 import AllPost from "../../components/posts/all-post";
-import { getAllPosts } from "../../lib/post-util";
+import { GetAllPosts } from "../../lib/post-util";
 
 function Posts(props) {
   return (
@@ -10,7 +10,7 @@ function Posts(props) {
 }
 
 export function getStaticProps() {
-  const allPosts = getAllPosts();
+  const allPosts = GetAllPosts();
 
   return {
     props: {

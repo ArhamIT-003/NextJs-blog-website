@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Hero from "../components/home-page/hero";
 import FeaturedPost from "../components/home-page/featured-post";
-import { getFeaturedPosts } from "../lib/post-util";
+import { GetFeaturedPosts } from "../lib/post-util";
 
 function Home(props) {
   return (
@@ -13,7 +13,7 @@ function Home(props) {
 }
 
 export function getStaticProps() {
-  const allFeaturedPosts = getFeaturedPosts();
+  const allFeaturedPosts = GetFeaturedPosts();
 
   return {
     props: {

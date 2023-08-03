@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import ContactForm from "../components/contact/contact-form";
 
-function contact() {
+function Contact() {
   return (
     <Fragment>
       <ContactForm />
@@ -9,4 +9,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;
